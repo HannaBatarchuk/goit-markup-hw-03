@@ -61,14 +61,17 @@ header {
 .header-address {
   display: flex; 
   align-items: center;
-  height: 80px;
 }
+
 /* Стили логотипа */
 .logo {
   margin-right: 93px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+.site-nav > .item {
+  padding: 32px 0px;
 }
 .site-nav .item + .item {
   margin-left: 50px;
@@ -276,31 +279,48 @@ padding-bottom: 94px;
 .section-button .item:last-child{
   margin-right: 0px;
 }
-
+/* карточки продуктов */
 .product-section {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 94px;
-  margin-right: calc(-1 * var(--card-set-gap);
-  margin-bottom: calc(-1 * var(--card-set-gap);
+  margin-right: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
 }
+
 .product-section > .product-item {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
+  border: 1px solid var(--border-color);
 }
 
 .name-product {
+  margin-top: 20px;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   color: var(--main-black-color);
 }
 .type-product {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px 24px;
+  width: 370px;
+}
+
+
 /* визуально скрытые заголовки секций */
 .visually-hidden:not(:focus):not(:active) {
   width: 1px;
