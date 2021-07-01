@@ -14,7 +14,7 @@
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -72,6 +72,8 @@ header {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
 }
 .site-nav > .item {
   padding: 32px 0px;
@@ -103,10 +105,8 @@ header {
   color: var(--main-black-color);
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--extra-blue-color);
-}
-.site-nav .link:active {
+.site-nav .link:focus,
+.site-nav .active {
   color: var(--extra-blue-color);
 }
 
@@ -133,6 +133,9 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
+.hero-text {
+  margin-bottom: 30px;
+}
 .hero-button {
   margin-top: 30px;
   min-width: 200px;
@@ -149,7 +152,7 @@ header {
   cursor: pointer;
 }
 .hero-content {
-  padding: 200px 253px;
+  padding: 200px 0;
   text-align: center;
 }
 .hero-container {
@@ -167,9 +170,10 @@ header {
   justify-content: space-between;
 }
 
-.advantages-head .advantage {
+.advantage {
   font-size: 14px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantage-text {
   width: 270px;
@@ -209,6 +213,7 @@ header {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .specialty {
@@ -220,7 +225,6 @@ header {
 .team-image {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
@@ -310,14 +314,13 @@ header {
 }
 
 .name-product {
-  margin-top: 20px;
+  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 36px;
   color: var(--main-black-color);
 }
 .type-product {
-  margin-top: 8px;
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
